@@ -1,13 +1,17 @@
 package com.colak.springaerospiketutorial.model;
 
-
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.aerospike.mapping.Document;
 import org.springframework.data.annotation.Id;
 
-@Data
 @Document
+
+@Getter
+@Setter
+@EqualsAndHashCode
 @AllArgsConstructor
 public class User {
     @Id
